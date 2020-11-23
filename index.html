@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Крестики -нолики</title>
+    <link rel="stylesheet" href="main.css/style.css">
+</head>
+<body class="bg">
+    <h1 class="game">Крестики-нолики</h1>
+    <div class="movePlayer">
+      
+        <span>Сейчас ходит <span id="movePlr">x</span></span>
+    </div>
+    <div class="stat">
+        <table>
+            <th colspan="2">Статистика</th>
+            <tr>
+                <td>x</td>
+                <td><span id="sx">0</span></td>
+            </tr>
+            <tr>
+                <td>0</td>
+                <td><span id="so">0</span></td>
+            </tr>
+            <tr>
+                <td>Ничьи</td>
+                <td><span id="sd">0</span></td>
+            </tr>
+        </table>
+    </div>
+    <div class="area-wrapper">
+      
+      
+        <div id="area">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+
+        </div>
+    </div>
+    <div class="wrapper">
+        <input type="checkbox" id="button">
+        <label for="button" class="label"></label>
+        <div class="modal">
+          <label for="button" class="close"></label>
+        </div>
+      </div>  
+        
+      
+    <script src="main.js/add.js"></script>
+</body>
+</html>
