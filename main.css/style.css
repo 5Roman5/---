@@ -71,5 +71,15 @@
   align-items: center;
   background-color: hotpink;
   width: 250px;
+}
+.hidden {
   display: none;
+}
+.button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50px;
+  border-radius: 5px;
+  background-color: rgb(10, 108, 221);
 }
