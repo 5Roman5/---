@@ -1,5 +1,6 @@
 var area = document.getElementById('area');
 
+
 var stat = {
     'x':0,
     'o':0,
