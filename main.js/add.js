@@ -1,5 +1,6 @@
 var area = document.getElementById('area');
-
+const btn = document.querySelector('#button');
+const content = document.querySelector('#content');
 
 var stat = {
     'x':0,
@@ -56,32 +57,32 @@ function checkElements(){
         
         stat.x+=1;
         updateStat();
-        alert('Победил играющий крестиками');
+        content.classList.remove("hidden");
+        document.getElementById('resultText').innerText = 'Победили Х';
+        
         restart();
         
 
          }else if(boxes [arr[i][0]].innerHTML == 'o' && boxes [arr[i][1]].innerHTML == 'o' && boxes [arr[i][2]].innerHTML == 'o') {
         stat.o+=1;
         updateStat();
-        alert('Победил играющий ноликами');
+        content.classList.remove("hidden");
+        document.getElementById('resultText').innerText = 'Победили O';
         restart();
-        
-        
-        
-        
-     } else if (move == 9) {
+           
+        } else if (move == 9) {
         stat.d+=1;
         updateStat();
-        alert('Ничья');
+        content.classList.remove("hidden");
+        document.getElementById('resultText').innerText = 'Ничья';
         restart();
-            
-            
-            
-        }
-        
+     }
+      btn.addEventListener('click',btnClick);
         
     }
-
+    function btnClick() {
+        content.classList.add('hidden');
+    }
     
     function updateStat(){
         document.getElementById('sx').innerText = stat.x;
